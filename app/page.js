@@ -115,11 +115,11 @@ export default function Home() {
             productCard.length > 0 ? productCard.slice(0, 4).map((item) => {
               return (
                 <div className="text-center shadow-card-shadow p-[15px] rounded-[10px]">
-                  <Image src={getImage(item.cardImg)} className="mb-[1rem] w-[200px] mx-auto" />
-                  <h1 className="mb-[1rem] text-[25px] font-bold">{item.cardHeading}</h1>
-                  <p className="text-[16px] font-medium leading-[20px] mb-[1rem]">{item.cardSubHeading}</p>
+                  <Image src={getImage(item.cardImg)} className="mb-[1.5rem] w-[250px] min-h-[250px] mx-auto" />
+                  <h1 className="text-[25px] font-bold min-h-[85px]">{item.cardHeading}</h1>
+                  <p className="text-[16px] font-medium leading-[20px] min-h-[110px]">{item.cardSubHeading}</p>
                   <h1 className="text-[20px] font-bold mb-[1rem]">{item.cardPrice} PKR</h1>
-                  <button className="bg-BuyBtn text-white font-medium px-[20px] py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
+                  <button className="bg-BuyBtn text-white font-bold px-[20px] py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
                 </div>
               )
             })
