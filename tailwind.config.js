@@ -11,6 +11,9 @@ module.exports = {
         BuyBtn: '#1AD1B2',
         PriceText: "#888888",
       },
+      boxShadow: {
+        "card-shadow": "0 0 10px 1px #d6e3e1",
+      }
     },
   },
   plugins: [],
