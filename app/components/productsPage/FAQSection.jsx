@@ -10,7 +10,7 @@ export default function FAQSection(props) {
         <div></div>
         <div className="col-span-2">
           <button
-            className="w-full p-4 text-left font-bold text-black mb-[1rem] rounded-[20px] border border-black hover:bg-gray-100 transition duration-300"
+            className="w-full flex justify-between items-center sm:text-[14px] md:text-[16px] sm:p-3 md:p-4 text-left font-bold text-black mb-[1rem] rounded-[20px] border border-black hover:bg-gray-100 transition duration-300"
             onClick={props.toggleAccordion}
           >
             {props.title}
@@ -25,7 +25,7 @@ export default function FAQSection(props) {
             </span>
           </button>
           {props.isOpen && (
-            <div className="text-black bg-fqContainer rounded-[20px] mb-[1rem] p-[20px]">
+            <div className="sm:text-[14px] md:text-[20px] text-black bg-fqContainer rounded-[20px] mb-[1rem] p-[20px]">
               {props.data}
             </div>
           )}

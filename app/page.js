@@ -54,65 +54,59 @@ export default function Home() {
           filterRecord.length > 0 ? filterRecord.map((item) => {
             return (
               <div key={item.id}>
-                <div className="home-container sm:p-[1rem] md:p-[4rem] mb-[5rem]">
-                  <h1 className="text-center text-white text-[42px] font-medium leading-[60px] mb-[3rem]">{item.mainHeading}</h1>
-                  <p className="text-center text-white text-[24px] font-medium leading-[40px]">{item.mainSubHeading}</p>
+                <div className="home-container sm:p-[1rem] md:p-[4rem] sm:mb-[1rem] md:mb-[5rem]">
+                  <h1 className="text-center text-white sm:text-[20px] md:text-[42px] font-medium sm:leading-[25px] md:leading-[60px] sm:mb-[1rem] md:mb-[3rem]">{item.mainHeading}</h1>
+                  <p className="text-center text-white sm:text-[15px] sm:leading-[20px] md:text-[24px] font-medium md:leading-[40px]">{item.mainSubHeading}</p>
                 </div>
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-14 sm:px-[1rem] md:px-[4rem] mb-[5rem]">
-                  <div>
-                    <Image src={getImage(item.productUrlLarge)} className="mb-[3rem] w-full" />
+
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-6 md:gap-14 sm:px-[1rem] md:px-[4rem] sm:mb-[3rem] md:mb-[5rem]">
+                  <div className="grid sm:grid-cols-2 md:grid-cols-1 gap-4">
+                    <div>
+                      <Image src={getImage(item.productUrlLarge)} className="sm:mb-[1rem] md:mb-[3rem] w-full sm:h-full md:h-auto" />
+                    </div>
                     <div className="flex justify-end">
                       <Image src={getImage(item.productSmallUrl)} />
                     </div>
                   </div>
                   <div>
-                    <h1 className="text-[58px] font-medium leading-[70px] mb-8">{item.productHeading}</h1>
-                    <p className="text-[24px] font-medium leading-[40px]">{item.productParagraph}</p>
+                    <h1 className="sm:text-[30px] sm:text-subHeadingColor md:text-black md:text-[58px] font-medium sm:leading-[20px] md:leading-[70px] sm:mb-4 md:mb-8">{item.productHeading}</h1>
+                    <p className="sm:text-[12px] sm:leading-[23px] md:text-[24px] font-medium md:leading-[40px]">{item.productParagraph}</p>
                   </div>
                 </div>
-                <div>
-                  <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 sm:px-[1rem] md:px-[4rem] mb-[5rem]">
-                    <div>
-                      <div className="flex items-center">
-                        <Image src={saveWaterIcon} /> <span className="ms-4">{item.productBenefitOne}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex items-center">
-                        <Image src={saveWaterIcon2} /> <span className="ms-4">{item.productBenefitTwo}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex items-center">
-                        <Image src={weatherIcon} /> <span className="ms-4">{item.productBenefitThree}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex items-center">
-                        <Image src={electricPolIcon} /> <span className="ms-4">{item.productBenefitFour}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex items-center">
-                        <Image src={equalizerIcon} /> <span className="ms-4">{item.productBenefitFive}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex items-center">
-                        <Image src={roiWeekIcon} /> <span className="ms-4">{item.productBenefitSix}</span>
-                      </div>
-                    </div>
-                    <div className="col-span-3">
-                      <div className="flex items-center">
-                        <Image src={airFlowIcon} /> <span className="ms-4">{item.productBenefitSeven}</span>
-                      </div>
+
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:px-[1rem] md:px-[4rem] sm:mb-[3rem] md:mb-[5rem]">
+                  <div className="flex items-center">
+                    <Image src={saveWaterIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitOne}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={saveWaterIcon2} className="sm:w-[35px] md:w-auto" /> <span className="ms-4">{item.productBenefitTwo}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={weatherIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitThree}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={electricPolIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitFour}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={equalizerIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitFive}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={roiWeekIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitSix}</span>
+                  </div>
+                  <div className="sm:col-span-2 md:col-span-3">
+                    <div className="flex items-center">
+                      <Image src={airFlowIcon} className="sm:w-[100px] md:w-auto sm:ms-[0.5rem]" /> <span className="ms-4">{item.productBenefitSeven}</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 text-center mb-[5rem] ">
-                  <p className="flex justify-center items-center mb-[3rem]"><span className="text-PriceText text-[24px] font-medium leading-[40px] me-[2rem]">{item.unitText}</span> <span className="text-[64px] font-medium leading-[40px]">{item.UnitAmount}</span></p>
-                  <button className="px-[20px] py-[12px] text-[36px] font-medium leading-[40px] bg-BuyBtn text-white w-[300px] mx-auto rounded-[46px]">Buy Now</button>
+                <div className="grid grid-cols-1 text-center sm:mb-[3rem] md:mb-[5rem]">
+                  <p className="sm:hidden md:flex justify-center items-center mb-[3rem]"><span className="text-PriceText text-[24px] font-medium leading-[40px] me-[2rem]">{item.unitText}</span> <span className="text-[64px] font-medium leading-[40px]">{item.UnitAmount}</span></p>
+                  <div className="sm:block md:hidden">
+                    <p className="text-[30px] font-medium leading-[20px] mb-[1.5rem]">{item.UnitAmount} PKR</p>
+                    <p className="text-PriceText text-[16px] font-medium leading-[20px] mb-[1.5rem]">{item.unitText}</p>
+                  </div>
+                  <button className="px-[20px] py-[12px] sm:text-[20px] md:text-[36px] font-medium leading-[40px] bg-BuyBtn hover:bg-buyBtnHover text-white sm:w-[150px] md:w-[300px] mx-auto rounded-[46px]">Buy Now</button>
                 </div>
               </div>
             )
@@ -122,14 +116,14 @@ export default function Home() {
         }
       </section>
 
-      <section className="mb-[5rem]">
-        <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left mb-[3rem]">
+      <section className="sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[3rem]  ">
           <div></div>
           <div className="col-span-2">
-            <h1 className="text-[48px] leading-[60px] text-subHeadingColor mb-[1rem]">
+            <h1 className="sm:text-[20px] md:text-[48px] sm:leading-[30px] md:leading-[60px] text-subHeadingColor sm:mb-[0.5rem] md:mb-[1rem]">
               Frequently asked questions.
             </h1>
-            <p className="text-[18px] leading-[28px] text-PriceText ">
+            <p className="sm:text-[12px] md:text-[18px] sm:leading-[20px] md:leading-[28px] text-PriceText ">
               Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi
               pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc
               parturient adipiscing commodo.
@@ -154,16 +148,16 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-4 sm:px-4 md:px-[4rem] mb-[5rem]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-4 sm:px-4 md:px-[4rem] sm:mb-[2rem] md:mb-[5rem]">
           {
             productCard.length > 0 ? productCard.slice(0, 4).map((item) => {
               return (
                 <div className="text-center shadow-card-shadow p-[15px] rounded-[10px]">
-                  <Image src={getImage(item.cardImg)} className="mb-[1.5rem] w-[250px] min-h-[250px] mx-auto" />
-                  <h1 className="text-[25px] text-subHeadingColor font-bold min-h-[85px]">{item.cardHeading}</h1>
+                  <Image src={getImage(item.cardImg)} className="mb-[1.5rem] sm:w-[200px] md:w-[250px] sm:min-h-[200px] md:min-h-[250px] mx-auto" />
+                  <h1 className="text-[25px] text-subHeadingColor font-bold sm:min-h-[40px] md:min-h-[85px]">{item.cardHeading}</h1>
                   <p className="text-[16px] font-medium leading-[20px] min-h-[110px]">{item.cardSubHeading}</p>
                   <h1 className="text-[20px] font-bold mb-[1rem]">{item.cardPrice} PKR</h1>
-                  <button className="bg-BuyBtn text-white font-bold px-[20px] py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
+                  <button className="bg-BuyBtn hover:bg-buyBtnHover text-white font-bold px-[20px] py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
                 </div>
               )
             })

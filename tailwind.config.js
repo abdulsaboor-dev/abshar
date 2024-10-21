@@ -7,11 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '320px',
+      },
       colors: {
         BuyBtn: '#1AD1B2',
         PriceText: "#888888",
         fqContainer: "#FFF7DB",
         subHeadingColor: "#3328BF",
+        buyBtnHover: "rgb(30 199 170)",
       },
       boxShadow: {
         "card-shadow": "0 0 10px 1px #d6e3e1",
