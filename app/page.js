@@ -12,6 +12,7 @@ import airFlowIcon from "@/public/waterSavingImg/air-flow.png";
 import { useEffect, useState } from "react";
 import FAQSection from "./components/productsPage/FAQSection";
 import productQuestion from "./data/productsQuestion";
+import Link from "next/link";
 
 export default function Home() {
   const [filterRecord, setFilterRecord] = useState([]);
@@ -106,7 +107,7 @@ export default function Home() {
                     <p className="text-[30px] font-medium leading-[20px] mb-[1.5rem]">{item.UnitAmount} PKR</p>
                     <p className="text-PriceText text-[16px] font-medium leading-[20px] mb-[1.5rem]">{item.unitText}</p>
                   </div>
-                  <button className="px-[20px] py-[12px] sm:text-[20px] md:text-[36px] font-medium leading-[40px] bg-BuyBtn hover:bg-buyBtnHover text-white sm:w-[150px] md:w-[300px] mx-auto rounded-[46px]">Buy Now</button>
+                  <button className="sm:px-[8px] sm:py-[5px] md:px-[20px] md:py-[12px] sm:text-[20px] md:text-[36px] font-medium leading-[40px] bg-BuyBtn hover:bg-buyBtnHover text-white sm:w-[150px] md:w-[300px] mx-auto rounded-[46px]">Buy Now</button>
                 </div>
               </div>
             )
@@ -116,11 +117,11 @@ export default function Home() {
         }
       </section>
 
-      <section className="sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
+      <section className="sm:hidden md:block sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
         <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[3rem]  ">
           <div></div>
           <div className="col-span-2">
-            <h1 className="sm:text-[20px] md:text-[48px] sm:leading-[30px] md:leading-[60px] text-subHeadingColor sm:mb-[0.5rem] md:mb-[1rem]">
+            <h1 className="sm:text-[20px] md:text-[48px] sm:leading-[30px] md:leading-[60px] font-bold text-subHeadingColor sm:mb-[0.5rem] md:mb-[1rem]">
               Frequently asked questions.
             </h1>
             <p className="sm:text-[12px] md:text-[18px] sm:leading-[20px] md:leading-[28px] text-PriceText ">
@@ -148,17 +149,20 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-4 sm:px-4 md:px-[4rem] sm:mb-[2rem] md:mb-[5rem]">
+        <h1 className="text-center mb-[2rem] font-bold text-subHeadingColor sm:text-[20px] md:text-[25px]">Relevant Products</h1>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:px-4 md:px-[4rem] sm:mb-[2rem] md:mb-[5rem]">
           {
             productCard.length > 0 ? productCard.slice(0, 4).map((item) => {
               return (
-                <div className="text-center shadow-card-shadow p-[15px] rounded-[10px]">
-                  <Image src={getImage(item.cardImg)} className="mb-[1.5rem] sm:w-[200px] md:w-[250px] sm:min-h-[200px] md:min-h-[250px] mx-auto" />
-                  <h1 className="text-[25px] text-subHeadingColor font-bold sm:min-h-[40px] md:min-h-[85px]">{item.cardHeading}</h1>
-                  <p className="text-[16px] font-medium leading-[20px] min-h-[110px]">{item.cardSubHeading}</p>
-                  <h1 className="text-[20px] font-bold mb-[1rem]">{item.cardPrice} PKR</h1>
-                  <button className="bg-BuyBtn hover:bg-buyBtnHover text-white font-bold px-[20px] py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
-                </div>
+                <Link href={`/product/${item.id}`}>
+                  <div className="text-center shadow-card-shadow sm:px-[6px] sm:py-[10px] md:p-[15px] rounded-[10px]">
+                    <Image src={getImage(item.cardImg)} className="mb-[1.5rem] sm:w-[200px] md:w-[250px] sm:min-h-[140px] md:min-h-[250px] mx-auto" />
+                    <h1 className="sm:text-[15px] md:text-[25px] text-subHeadingColor sm:leading-[18px] md:leading-[40px] font-bold sm:min-h-[45px] md:min-h-[85px]">{item.cardHeading}</h1>
+                    <p className="sm:text-[12px] md:text-[16px] font-medium sm:min-h-[120px] md:min-h-[135px] sm:leading-[16px] md:leading-[25px]">{item.cardSubHeading}</p>
+                    <h1 className="sm:text-[15px] md:text-[20px] font-bold mb-[1rem]">{item.cardPrice} PKR</h1>
+                    <button className="bg-BuyBtn hover:bg-buyBtnHover text-white font-bold sm:text-[12px] md:text-[16px] sm:px-[12px] sm:py-[5px] md:px-[20px] md:py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
+                  </div>
+                </Link>
               )
             })
               :
@@ -166,6 +170,37 @@ export default function Home() {
           }
         </div>
 
+      </section>
+
+      <section className="sm:block md:hidden sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[3rem]  ">
+          <div></div>
+          <div className="col-span-2">
+            <h1 className="sm:text-[20px] md:text-[48px] sm:leading-[30px] md:leading-[60px] font-bold text-subHeadingColor sm:mb-[0.5rem] md:mb-[1rem]">
+              Frequently asked questions.
+            </h1>
+            <p className="sm:text-[12px] md:text-[18px] sm:leading-[20px] md:leading-[28px] text-PriceText ">
+              Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi
+              pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc
+              parturient adipiscing commodo.
+            </p>
+          </div>
+          <div></div>
+        </div>
+
+        {
+          accordions.map((accordion) => {
+            return (
+              <FAQSection
+                key={accordion.id}
+                title={accordion.title}
+                data={accordion.data}
+                isOpen={accordion.isOpen}
+                toggleAccordion={() => toggleAccordion(accordion.id)}
+              />
+            )
+          })
+        }
       </section>
 
     </>
