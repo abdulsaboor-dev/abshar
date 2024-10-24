@@ -13,6 +13,7 @@ import roiWeekIcon from "@/public/waterSavingImg/roi-week-icon.png";
 import airFlowIcon from "@/public/waterSavingImg/air-flow.png";
 import FAQSection from "@/app/components/productsPage/FAQSection";
 import Image from "next/image";
+// import logIn from "@"
 
 const ProductDetail = ({ params }) => {
   const selectProductId = params.id;
@@ -31,15 +32,15 @@ const ProductDetail = ({ params }) => {
 
   useEffect(() => {
     const finalFilterProduct = waterSaving.filter(
-      (item) => item.id == productCardId
+      (item) => item.id == selectProductId
     );
     setFilterRecord(finalFilterProduct);
     const removeSelectProductCard = productCards.filter(
-      (item) => item.id != productCardId
+      (item) => item.id != selectProductId
     );
     setProductCard(removeSelectProductCard);
     setAccordion(productQuestion);
-  }, [productCardId]);
+  }, [selectProductId]);
 
   const toggleAccordion = (accordionkey) => {
     const updatedAccordions = accordions.map((accord) => {
