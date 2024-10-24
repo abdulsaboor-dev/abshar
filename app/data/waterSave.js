@@ -30,10 +30,10 @@ const waterSaving = [
         "productBenefitFive": "ROI in 6 weeks",
         "productBenefitSix": "",
         "productBenefitSeven": "",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
+        "productUrlLarge": "ai-mointer.png",
+        "productSmallUrl": "smart-mointer-card-img.png",
         "unitText": "Price Per Unit",
-        "UnitAmount": 4500
+        "UnitAmount": 200
     },
     {
         "id": 3,
@@ -48,31 +48,13 @@ const waterSaving = [
         "productBenefitFive": "Reports and analytics for water use insights",
         "productBenefitSix": "Advanced management portal for full control",
         "productBenefitSeven": "Secure communication with cellular connectivity",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
+        "productUrlLarge": "neck-card-img.png",
+        "productSmallUrl": "neck-card-img.png",
         "unitText": "Price Per Unit",
-        "UnitAmount": 4500
+        "UnitAmount": 1000
     },
     {
         "id": 4,
-        "mainHeading": "According to McKinsey & Company, industries Spend 10X More on Water and CO2 Expenses!",
-        "mainSubHeading": "Implement Aabshar Solutions to save up to 98% on water costs and reduce your carbon footprint today!",
-        "productHeading": "Shower Optimizer",
-        "productParagraph": "Introducing the Aabshar Mist Shower Optimizer, a groundbreaking innovation in shower technology. After taking thousands of showers, you’ve never experienced anything quite like this. Our meticulously designed and engineered system provides a superior shower experience in every sense. The Aabshar Mist Shower is a fully self-installed shower system featuring an adjustable bracket and a portable wand that envelops you in a refreshing mist. It atomizes water into millions of tiny droplets, creating ten times more surface area than a regular showerhead. This unique approach ensures that more water comes into contact with your body, leaving your skin clean and hydrated while using 70% less water than typical household showerheads. For the average home, the Aabshar Mist Shower pays for itself in less than two years, making it a smart and eco-friendly choice. After nearly five years of dedicated research and development, we’ve crafted numerous iterations and prototypes, integrating advanced technologies from aerospace engineering to optimize our shower nozzles and create our H2MICRO™ technology. This patent-pending breakthrough is a significant advancement in an industry that has seen little innovation for over a century. At Aabshar, our mission is to create a shower experience that leaves you feeling clean, refreshed, and ready to take on the world. Join the waiting list today and be among the first to experience the future of showering! ",
-        "productBenefitOne": "Save ",
-        "productBenefitTwo": "Continuous learning adapts to your unique water network",
-        "productBenefitThree": "Flexible prevention and alerting policies",
-        "productBenefitFour": "Remote water shutoff and activation",
-        "productBenefitFive": "Reports and analytics for water use insights",
-        "productBenefitSix": "Advanced management portal for full control",
-        "productBenefitSeven": "Secure communication with cellular connectivity",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
-        "unitText": "Price Per Unit",
-        "UnitAmount": 4500
-    },
-    {
-        "id": 5,
         "mainHeading": "According to McKinsey & Company, industries Spend 10X More on Water and CO2 Expenses!",
         "mainSubHeading": "Implement Aabshar Solutions to save up to 98% on water costs and reduce your carbon footprint today!",
         "productHeading": "98 % Water Saving Optimizer",
@@ -84,17 +66,17 @@ const waterSaving = [
         "productBenefitFive": "Reports and analytics for water use insights",
         "productBenefitSix": "Advanced management portal for full control",
         "productBenefitSeven": "Secure communication with cellular connectivity",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
+        "productUrlLarge": "98water.png",
+        "productSmallUrl": "98water.png",
         "unitText": "Price Per Unit",
-        "UnitAmount": 4500
+        "UnitAmount": 200
     },
     {
-        "id": 6,
+        "id": 5,
         "mainHeading": "According to McKinsey & Company, industries Spend 10X More on Water and CO2 Expenses!",
         "mainSubHeading": "Implement Aabshar Solutions to save up to 98% on water costs and reduce your carbon footprint today!",
-        "productHeading": "Aerator",
-        "productParagraph": "The Aabshar Aerator is the ideal solution for fixing a broken tap without replacing the entire unit. Easily replace the aerator to restore functionality and enhance water flow while reducing consumption. By mixing air with water, it provides a steady stream that feels powerful, all while conserving resources. Say goodbye to leaks and low pressure—replace your aerator and enjoy an efficient tap experience! ",
+        "productHeading": "Shower Optimizer",
+        "productParagraph": "Introducing the Aabshar Mist Shower Optimizer, a groundbreaking innovation in shower technology. After taking thousands of showers, you’ve never experienced anything quite like this. Our meticulously designed and engineered system provides a superior shower experience in every sense. The Aabshar Mist Shower is a fully self-installed shower system featuring an adjustable bracket and a portable wand that envelops you in a refreshing mist. It atomizes water into millions of tiny droplets, creating ten times more surface area than a regular showerhead. This unique approach ensures that more water comes into contact with your body, leaving your skin clean and hydrated while using 70% less water than typical household showerheads. For the average home, the Aabshar Mist Shower pays for itself in less than two years, making it a smart and eco-friendly choice. After nearly five years of dedicated research and development, we’ve crafted numerous iterations and prototypes, integrating advanced technologies from aerospace engineering to optimize our shower nozzles and create our H2MICRO™ technology. This patent-pending breakthrough is a significant advancement in an industry that has seen little innovation for over a century. At Aabshar, our mission is to create a shower experience that leaves you feeling clean, refreshed, and ready to take on the world. Join the waiting list today and be among the first to experience the future of showering! ",
         "productBenefitOne": "Save ",
         "productBenefitTwo": "Continuous learning adapts to your unique water network",
         "productBenefitThree": "Flexible prevention and alerting policies",
@@ -102,12 +84,29 @@ const waterSaving = [
         "productBenefitFive": "Reports and analytics for water use insights",
         "productBenefitSix": "Advanced management portal for full control",
         "productBenefitSeven": "Secure communication with cellular connectivity",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
+        "productUrlLarge": "mini-shower.png",
+        "productSmallUrl": "mini-shower.png",
+        "unitText": "Price Per Unit",
+        "UnitAmount": 700
+    },
+    {
+        "id": 6,
+        "mainHeading": "According to McKinsey & Company, industries Spend 10X More on Water and CO2 Expenses!",
+        "mainSubHeading": "Implement Aabshar Solutions to save up to 98% on water costs and reduce your carbon footprint today!",
+        "productHeading": "85% Water Saving",
+        "productParagraph": "The Aabshar Dual Flow Optimizer is designed to save water without compromising functionality. Utilizing our patented atomization technology, this innovative product generates millions of droplets that instantly drench your hands, allowing you to achieve a remarkable 98% water savings without loss of performance. Need more water? Simply turn the handle to switch to spray mode. Even in this mode, you’ll enjoy an impressive 85% savings compared to standard taps while still accessing all the water you need.",
+        "productBenefitOne": "Save up to 98% Water",
+        "productBenefitTwo": " Dual Modes",
+        "productBenefitThree": "Reduce Co2 Footprint",
+        "productBenefitFour": "Save Up to Electricity Cost",
+        "productBenefitFive": "Flow Span Adjustment",
+        "productBenefitSix": "ROI in 4 Weeks",
+        "productBenefitSeven": "Flow Rates: 1 - 0.05 GPM I 2 - 0.10 GPM I 3- 0.20 GPM I 4- 0.26 GPM I 5- 0.35 GPM I 6- 0.5 GPM",
+        "productUrlLarge": "85water.png",
+        "productSmallUrl": "85water.png",
         "unitText": "Price Per Unit",
         "UnitAmount": 4500
     },
-
     {
         "id": 7,
         "mainHeading": "According to McKinsey & Company, industries Spend 10X More on Water and CO2 Expenses!",
@@ -121,10 +120,10 @@ const waterSaving = [
         "productBenefitFive": "ROI in 6 weeks",
         "productBenefitSix": "",
         "productBenefitSeven": "",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
+        "productUrlLarge": "optimizer-card-img.png",
+        "productSmallUrl": "optimizer-card-img.png",
         "unitText": "Price Per Unit",
-        "UnitAmount": 4500
+        "UnitAmount": 900
     },
     {
         "id": 8,
@@ -139,10 +138,28 @@ const waterSaving = [
         "productBenefitFive": "Reports and analytics for water use insights",
         "productBenefitSix": "Advanced management portal for full control",
         "productBenefitSeven": "Secure communication with cellular connectivity",
-        "productUrlLarge": "productLargeImg.png",
-        "productSmallUrl": "product-small-img.png",
+        "productUrlLarge": "smart-water-card-img.png",
+        "productSmallUrl": "smart-water-card-img.png",
         "unitText": "Price Per Unit",
-        "UnitAmount": 4500
+        "UnitAmount": 300
+    },
+    {
+        "id": 9,
+        "mainHeading": "According to McKinsey & Company, industries Spend 10X More on Water and CO2 Expenses!",
+        "mainSubHeading": "Implement Aabshar Solutions to save up to 98% on water costs and reduce your carbon footprint today!",
+        "productHeading": "0% Water Saving Optimizer",
+        "productParagraph": "The Aabshar Tri Mode Optimizer is designed to revolutionize your water usage with its innovative tri flow nozzle, offering three adjustable flow rates: 0.5 GPM, 1.0 GPM, and 1.5 GPM. This versatile device enhances water efficiency, allowing you to achieve an impressive 90% water savings without sacrificing performance. Whether you need a gentle mist for washing hands, a steady stream for rinsing dishes, or a powerful spray for cleaning, the Tri Mode Optimizer adapts to your needs with ease. Its advanced design reduces waste and conserves precious resources, making it an essential addition to any eco-conscious home or business. Experience the perfect blend of functionality and sustainability with the Aabshar Tri Mode Optimizer and take a significant step towards a more efficient future.",
+        "productBenefitOne": "Save upto 95% water",
+        "productBenefitTwo": "Easy Mode Switching",
+        "productBenefitThree": "Flow Rate Indicator",
+        "productBenefitFour": "Installation 15 Seconds",
+        "productBenefitFive": "Reports and analytics for water use insights",
+        "productBenefitSix": "Advanced management portal for full control",
+        "productBenefitSeven": "Secure communication with cellular connectivity",
+        "productUrlLarge": "90water.png",
+        "productSmallUrl": "90water.png",
+        "unitText": "Price Per Unit",
+        "UnitAmount": 400
     },
 ]
 

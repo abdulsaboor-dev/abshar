@@ -13,7 +13,6 @@ import roiWeekIcon from "@/public/waterSavingImg/roi-week-icon.png";
 import airFlowIcon from "@/public/waterSavingImg/air-flow.png";
 import FAQSection from "@/app/components/productsPage/FAQSection";
 import Image from "next/image";
-// import logIn from "@"
 
 const ProductDetail = ({ params }) => {
   const selectProductId = params.id;
@@ -22,9 +21,9 @@ const ProductDetail = ({ params }) => {
   const [productCardId, setProductCardId] = useState(1);
   const [accordions, setAccordion] = useState([]);
 
-  // const getImage = (imageName) => {
-  //   return require(`./assets/${imageName}`);
-  // };
+  const getImage = (imageName) => {
+    return require(`@/public/waterSavingImg/${imageName}`);
+  };
 
   const hiddenProductCardhandler = (itemId) => {
     setProductCardId(itemId);
@@ -72,18 +71,15 @@ const ProductDetail = ({ params }) => {
 
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-6 md:gap-14 sm:px-[1rem] md:px-[4rem] sm:mb-[3rem] md:mb-[5rem]">
                   <div className="grid sm:grid-cols-2 md:grid-cols-1 gap-4">
-                    {/* <div>
-                      <Image
-                        src={getImage(item.productUrlLarge)}
-                        className="sm:mb-[1rem] md:mb-[3rem] w-full sm:h-full md:h-auto"
-                      />
+                    <div>
+                      <Image src={getImage(item.productUrlLarge)} className="sm:mb-[1rem] md:mb-[3rem] w-full sm:h-full md:h-auto" />
                     </div>
                     <div className="flex justify-end">
                       <Image src={getImage(item.productSmallUrl)} />
-                    </div> */}
+                    </div>
                   </div>
                   <div>
-                    <h1 className="sm:text-[30px] sm:text-subHeadingColor md:text-black md:text-[58px] font-medium sm:leading-[20px] md:leading-[70px] sm:mb-4 md:mb-8">
+                    <h1 className="sm:text-[30px] sm:text-subHeadingColor md:text-black md:text-[58px] font-medium sm:leading-[30px] md:leading-[70px] sm:mb-4 md:mb-8">
                       {item.productHeading}
                     </h1>
                     <p className="sm:text-[12px] sm:leading-[23px] md:text-[24px] font-medium md:leading-[40px]">
@@ -139,7 +135,7 @@ const ProductDetail = ({ params }) => {
                     <div className="flex items-center">
                       <Image
                         src={airFlowIcon}
-                        className="sm:w-[100px] md:w-auto sm:ms-[0.5rem]"
+                        className="sm:w-[50px] md:w-auto sm:ms-[0.5rem]"
                       />{" "}
                       <span className="ms-4">{item.productBenefitSeven}</span>
                     </div>
@@ -214,10 +210,10 @@ const ProductDetail = ({ params }) => {
               return (
                 <Link href={`/product/${item.id}`}>
                   <div className="text-center shadow-card-shadow sm:px-[6px] sm:py-[10px] md:p-[15px] rounded-[10px]">
-                    {/* <Image
+                    <Image
                       src={getImage(item.cardImg)}
                       className="mb-[1.5rem] sm:w-[200px] md:w-[250px] sm:min-h-[140px] md:min-h-[250px] mx-auto"
-                    /> */}
+                    />
                     <h1 className="sm:text-[15px] md:text-[25px] text-subHeadingColor sm:leading-[18px] md:leading-[40px] font-bold sm:min-h-[45px] md:min-h-[85px]">
                       {item.cardHeading}
                     </h1>

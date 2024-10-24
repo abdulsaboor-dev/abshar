@@ -21,8 +21,8 @@ export default function Home() {
   const [accordions, setAccordion] = useState([]);
 
   const getImage = (imageName) => {
-    return require(`./assets/${imageName}`);
-  }
+    return require(`@/public/waterSavingImg/${imageName}`);
+  };
 
   const hiddenProductCardhandler = (itemId) => {
     setProductCardId(itemId);

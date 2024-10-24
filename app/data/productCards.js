@@ -29,7 +29,7 @@ const productCards = [
         "cardSubHeading": "Dual Flow Nozzle - experience the all new mist flow. Easily switch water flow from mist to normal flow. Saves 85% to 98% Water.",
         "cardBtnLabel": "Buy Now",
         "cardPrice": 200,
-        "cardImg": "ai-mointer-card-img.png",
+        "cardImg": "98water.png",
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@ const productCards = [
         "cardSubHeading": "Have a great shower experience with 75 % less water. There are three main criteria for a satisfying shower experience: Coverage, Pressure and Heat.",
         "cardBtnLabel": "Pre-order",
         "cardPrice": 700,
-        "cardImg": "optimizer-card-img.png",
+        "cardImg": "mini-shower.png",
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@ const productCards = [
         "cardSubHeading": "Single Mode Nozzle - spray version that hides under the tap and offer huge savings without any compromises in experience and performance.",
         "cardBtnLabel": "Buy Now",
         "cardPrice": 400,
-        "cardImg": "smart-water-card-img.png",
+        "cardImg": "85water.png",
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@ const productCards = [
         "cardSubHeading": "The Industrial Size Water Optimizer is designed for large-scale applications, maximizing water efficiency and reducing waste while ensuring optimal performance for industrial operations.",
         "cardBtnLabel": "Contact Now",
         "cardPrice": 900,
-        "cardImg": "",
+        "cardImg": "optimizer-card-img.png",
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@ const productCards = [
         "cardSubHeading": "Our Smart Water Meter monitors usage in real-time, detects leaks, and promotes efficient water management for cost savings and sustainability.",
         "cardBtnLabel": "Subscribe Now",
         "cardPrice": 300,
-        "cardImg": "",
+        "cardImg": "smart-water-card-img.png",
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@ const productCards = [
         "cardSubHeading": "Tri Flow Nozzle - offers 3 adjustable flow rates for versatile usage, enhancing water efficiency while reducing waste and conserving resources.",
         "cardBtnLabel": "Buy Now",
         "cardPrice": 400,
-        "cardImg": "",
+        "cardImg": "90water",
     },
 ]
 
