@@ -71,7 +71,7 @@ const ProductDetail = ({ params }) => {
                       <Image src={getImage(item.productUrlLarge)} className="sm:mb-[1rem] md:mb-[3rem] w-full sm:h-full md:h-full lg:h-auto" />
                     </div>
                     <div className="flex justify-end md:w-full">
-                      <Image src={getImage(item.productSmallUrl)} />
+                      <Image src={getImage(item.productSmallUrl)} className="sm:w-full md:w-full lg:w-auto" />
                     </div>
                   </div>
                   <div>
