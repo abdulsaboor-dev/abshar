@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       screens: {
         'sm': '320px',
+        'md': '768px',
+        'lg': '992px'
       },
       colors: {
         BuyBtn: '#1AD1B2',

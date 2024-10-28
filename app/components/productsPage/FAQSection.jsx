@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function FAQSection(props) {
   return (
     <section>
-      <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 sm:gap-1 md:gap-1 lg:gap-8">
         <div></div>
         <div className="col-span-2">
           <button
-            className="w-full flex justify-between items-center sm:text-[14px] md:text-[16px] sm:p-3 md:p-4 text-left font-bold text-black mb-[1rem] rounded-[20px] border border-black hover:bg-gray-100 transition duration-300"
+            className="w-full flex justify-between items-center sm:text-[12px] md:text-[14px] lg:text-[16px] sm:p-3 md:p-4 text-left font-bold text-black md:mb-[0.50rem] lg:mb-[1rem] rounded-[20px] border border-black hover:bg-gray-100 transition duration-300"
             onClick={props.toggleAccordion}
           >
             {props.title}
@@ -25,7 +25,7 @@ export default function FAQSection(props) {
             </span>
           </button>
           {props.isOpen && (
-            <div className="sm:text-[14px] md:text-[20px] text-black bg-fqContainer rounded-[20px] mb-[1rem] p-[20px]">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[20px] text-black bg-fqContainer rounded-[20px] mb-[1rem] p-[20px]">
               {props.data}
             </div>
           )}

@@ -60,12 +60,12 @@ export default function Home() {
                   <p className="text-center text-white sm:text-[15px] sm:leading-[20px] md:text-[24px] font-medium md:leading-[40px]">{item.mainSubHeading}</p>
                 </div>
 
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-6 md:gap-14 sm:px-[1rem] md:px-[4rem] sm:mb-[3rem] md:mb-[5rem]">
-                  <div className="grid sm:grid-cols-2 md:grid-cols-1 gap-4">
+                <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:gap-6 md:gap-14 sm:px-[1rem] md:px-[4rem] sm:mb-[3rem] md:mb-[5rem]">
+                  <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 sm:gap-4 md:gap-8 lg:gap-4">
                     <div>
-                      <Image src={getImage(item.productUrlLarge)} className="sm:mb-[1rem] md:mb-[3rem] w-full sm:h-full md:h-auto" />
+                      <Image src={getImage(item.productUrlLarge)} className="sm:mb-[1rem] md:mb-[3rem] w-full sm:h-full md:h-full lg:h-auto" />
                     </div>
-                    <div className="flex justify-end">
+                    <div className="flex justify-end md:w-full">
                       <Image src={getImage(item.productSmallUrl)} />
                     </div>
                   </div>
@@ -75,39 +75,39 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:px-[1rem] md:px-[4rem] sm:mb-[3rem] md:mb-[5rem]">
+                <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-[1rem] md:px-[4rem] lg:px-[4rem] sm:mb-[3rem] md:mb-[3rem] lg:mb-[5rem]">
                   <div className="flex items-center">
-                    <Image src={saveWaterIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitOne}</span>
+                    <Image src={saveWaterIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitOne}</span>
                   </div>
                   <div className="flex items-center">
-                    <Image src={saveWaterIcon2} className="sm:w-[35px] md:w-auto" /> <span className="ms-4">{item.productBenefitTwo}</span>
+                    <Image src={saveWaterIcon2} className="sm:w-[35px] md:w-auto" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitTwo}</span>
                   </div>
                   <div className="flex items-center">
-                    <Image src={weatherIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitThree}</span>
+                    <Image src={weatherIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitThree}</span>
                   </div>
                   <div className="flex items-center">
-                    <Image src={electricPolIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitFour}</span>
+                    <Image src={electricPolIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitFour}</span>
                   </div>
                   <div className="flex items-center">
-                    <Image src={equalizerIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitFive}</span>
+                    <Image src={equalizerIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitFive}</span>
                   </div>
                   <div className="flex items-center">
-                    <Image src={roiWeekIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4">{item.productBenefitSix}</span>
+                    <Image src={roiWeekIcon} className="sm:w-[50px] md:w-auto" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitSix}</span>
                   </div>
                   <div className="sm:col-span-2 md:col-span-3">
                     <div className="flex items-center">
-                      <Image src={airFlowIcon} className="sm:w-[100px] md:w-auto sm:ms-[0.5rem]" /> <span className="ms-4">{item.productBenefitSeven}</span>
+                      <Image src={airFlowIcon} className="sm:w-[65px] md:w-[50px] lg:w-auto sm:ms-[0.5rem]" /> <span className="ms-4 sm:text-[11px] md:text-[12px] lg:text-[14px]">{item.productBenefitSeven}</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 text-center sm:mb-[3rem] md:mb-[5rem]">
-                  <p className="sm:hidden md:flex justify-center items-center mb-[3rem]"><span className="text-PriceText text-[24px] font-medium leading-[40px] me-[2rem]">{item.unitText}</span> <span className="text-[64px] font-medium leading-[40px]">{item.UnitAmount}</span></p>
+                  <p className="sm:hidden md:flex justify-center items-center mb-[3rem]"><span className="text-PriceText md:text-[18px] lg:text-[24px] font-medium md:leading-[20px] lg:leading-[40px] me-[2rem]">{item.unitText}</span> <span className="md:text-[40px] lg:text-[64px] font-medium md:leading-[20px] lg:leading-[40px]">{item.UnitAmount}</span></p>
                   <div className="sm:block md:hidden">
                     <p className="text-[30px] font-medium leading-[20px] mb-[1.5rem]">{item.UnitAmount} PKR</p>
                     <p className="text-PriceText text-[16px] font-medium leading-[20px] mb-[1.5rem]">{item.unitText}</p>
                   </div>
-                  <button className="sm:px-[8px] sm:py-[5px] md:px-[20px] md:py-[12px] sm:text-[20px] md:text-[36px] font-medium leading-[40px] bg-BuyBtn hover:bg-buyBtnHover text-white sm:w-[150px] md:w-[300px] mx-auto rounded-[46px]">Buy Now</button>
+                  <button className="sm:px-[8px] sm:py-[5px] md:px-[12px] md:py-[8px] lg:px-[20px] lg:py-[12px] sm:text-[20px] md:text-[36px] font-medium leading-[40px] bg-BuyBtn hover:bg-buyBtnHover text-white sm:w-[150px] md:w-[300px] mx-auto rounded-[46px]">Buy Now</button>
                 </div>
               </div>
             )
@@ -117,14 +117,14 @@ export default function Home() {
         }
       </section>
 
-      <section className="sm:hidden md:block sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
-        <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[3rem]  ">
+      <section className="sm:hidden md:hidden lg:block sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[3rem]  ">
           <div></div>
-          <div className="col-span-2">
-            <h1 className="sm:text-[20px] md:text-[48px] sm:leading-[30px] md:leading-[60px] font-bold text-subHeadingColor sm:mb-[0.5rem] md:mb-[1rem]">
+          <div className="md:col-span-1 lg:col-span-2">
+            <h1 className="sm:text-[20px] md:text-[35px] lg:text-[48px] sm:leading-[30px] md:leading-[40px] lg:leading-[60px] font-bold text-subHeadingColor md:mb-[0.5rem] lg:mb-[1rem]">
               Frequently asked questions.
             </h1>
-            <p className="sm:text-[12px] md:text-[18px] sm:leading-[20px] md:leading-[28px] text-PriceText ">
+            <p className="sm:text-[12px] md:text-[14px] lg:text-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[28px] text-PriceText ">
               Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi
               pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc
               parturient adipiscing commodo.
@@ -150,17 +150,17 @@ export default function Home() {
 
       <section>
         <h1 className="text-center mb-[2rem] font-bold text-subHeadingColor sm:text-[20px] md:text-[25px]">Relevant Products</h1>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:px-4 md:px-[4rem] sm:mb-[2rem] md:mb-[5rem]">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:px-4 md:px-[4rem] sm:mb-[2rem] md:mb-[5rem]">
           {
             productCard.length > 0 ? productCard.slice(0, 4).map((item) => {
               return (
                 <Link href={`/product/${item.id}`}>
-                  <div className="text-center shadow-card-shadow sm:px-[6px] sm:py-[10px] md:p-[15px] rounded-[10px]">
-                    <Image src={getImage(item.cardImg)} className="mb-[1.5rem] sm:w-[200px] md:w-[250px] sm:min-h-[140px] md:min-h-[250px] mx-auto" />
-                    <h1 className="sm:text-[15px] md:text-[25px] text-subHeadingColor sm:leading-[18px] md:leading-[40px] font-bold sm:min-h-[45px] md:min-h-[85px]">{item.cardHeading}</h1>
-                    <p className="sm:text-[12px] md:text-[16px] font-medium sm:min-h-[120px] md:min-h-[135px] sm:leading-[16px] md:leading-[25px]">{item.cardSubHeading}</p>
-                    <h1 className="sm:text-[15px] md:text-[20px] font-bold mb-[1rem]">{item.cardPrice} PKR</h1>
-                    <button className="bg-BuyBtn hover:bg-buyBtnHover text-white font-bold sm:text-[12px] md:text-[16px] sm:px-[12px] sm:py-[5px] md:px-[20px] md:py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
+                  <div className="text-center shadow-card-shadow sm:px-[6px] sm:py-[10px] md:px-[8px] md:py-[12px] lg:p-[15px] rounded-[10px]">
+                    <Image src={getImage(item.cardImg)} className="mb-[1.5rem] sm:w-[200px] md:w-[250px] sm:min-h-[145px] md:min-h-[250px] lg:min-h-[250px] mx-auto" />
+                    <h1 className="sm:text-[14px] md:text-[20px] lg:text-[25px] text-subHeadingColor sm:leading-[15px] md:leading-[25px] lg:leading-[40px] font-bold sm:min-h-[45px] md:min-h-[55px] lg:min-h-[85px]">{item.cardHeading}</h1>
+                    <p className="sm:text-[11px] md:text-[14px] lg:text-[16px] font-medium sm:min-h-[120px] md:min-h-[120px] lg:min-h-[135px] sm:leading-[14px] md:leading-[18px] lg:leading-[25px]">{item.cardSubHeading}</p>
+                    <h1 className="sm:text-[15px] md:text-[17px] lg:text-[20px] font-bold mb-[1rem]">{item.cardPrice} PKR</h1>
+                    <button className="bg-BuyBtn hover:bg-buyBtnHover text-white font-bold sm:text-[12px] md:text-[14px] lg:text-[16px] sm:px-[12px] sm:py-[5px] md:px-[14px] md:py-[8px] lg:px-[20px] lg:py-[12px] rounded-[45px]" onClick={() => hiddenProductCardhandler(item.id)}>{item.cardBtnLabel}</button>
                   </div>
                 </Link>
               )
@@ -172,20 +172,19 @@ export default function Home() {
 
       </section>
 
-      <section className="sm:block md:hidden sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[0rem]">
-        <div className="grid sm:grid-cols-1 md:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[3rem]  ">
-          <div></div>
-          <div className="col-span-2">
-            <h1 className="sm:text-[20px] md:text-[48px] sm:leading-[30px] md:leading-[60px] font-bold text-subHeadingColor sm:mb-[0.5rem] md:mb-[1rem]">
+      <section className="sm:block md:block lg:hidden sm:mb-[3rem] md:mb-[5rem] sm:px-[1rem] md:px-[4rem]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 sm:gap-1 md:gap-8 sm:text-center md:text-left sm:mb-[1.5rem] md:mb-[1rem] lg:mb-[3rem]">
+          <div className="col-span-1 text-center">
+            <h1 className="sm:text-[20px] md:text-[35px] lg:text-[48px] sm:leading-[30px] md:leading-[40px] lg:leading-[60px] font-bold text-subHeadingColor md:mb-[0.5rem] lg:mb-[1rem]">
               Frequently asked questions.
             </h1>
-            <p className="sm:text-[12px] md:text-[18px] sm:leading-[20px] md:leading-[28px] text-PriceText ">
+            <p className="sm:text-[12px] md:text-[14px] lg:text-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[28px] text-PriceText ">
               Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi
               pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc
               parturient adipiscing commodo.
             </p>
           </div>
-          <div></div>
+
         </div>
 
         {
